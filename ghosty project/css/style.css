@@ -1,0 +1,267 @@
+/**************************************/
+BASE STYLES
+/**************************************/
+
+@font-face {
+font-family: 'Ailerons Regular';
+src: url('../Ailerons-Typeface.otf') format("opentype");
+}
+
+@font-face {
+font-family: 'Arkhip';
+src: url('../Arkhip_font.ttf');
+}
+
+* {
+	box-sizing: border-box;
+
+}
+
+body {
+	margin: 0;
+	color: #FBFBFB;
+}
+
+a {
+	text-decoration: none;
+	color: #D2C678;
+}
+
+a:hover {
+	color: #C9BC68;
+	
+}
+
+
+/**************************************
+HEADER STYLES
+**************************************/
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url('../assets/header-bg.jpg');
+	background-size: cover;
+	text-align: center;
+	margin: 0;
+
+}
+/*logo styles*/
+#logoContainer {
+	max-width: 80px;
+	max-height: 80px;
+	border-radius: 50%;
+	margin-top: 2.5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#logo {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/*headline styles*/
+
+#headline {
+	padding: 0;
+	margin: 1%;
+	max-width: 90%;
+	color: #FBFBFB;
+	font-family: 'Ailerons', cursive;
+	font-size: 2.4em;
+	letter-spacing: .0625em;
+}
+
+/**************************************
+NAV STYLES
+**************************************/
+ 
+.hidden {
+	display: none;
+} 
+
+#navDiv {
+	width: 100%;
+	background-color: rgba(0, 0, 0, .125);
+}
+
+#nav {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0 5px;
+	margin: 0;
+}
+
+.navItem {
+	width: 20%;
+	font-family: 'Palanquin', sans-serif;
+	font-weight: 400;
+	color: #FBFBFB;
+	font-size: 0.9em;
+}
+
+.navItem:hover {
+	transform: scaleY(-1);
+}
+
+#navArrow {
+	max-width: 20px;
+	max-height: 20px;
+}
+
+#navArrow:hover {
+	max-width: 23px;
+	max-height: 23px;
+}
+
+/**************************************
+BODY STYLES - HOME PAGE
+**************************************/
+
+#bodyContainer {
+	background-image: url('../assets/home-bg.jpg');
+	background-size: cover;
+	background-position: 47% 50%;
+	display: flex;
+	min-height: 768px;
+	justify-content: center;
+}
+
+#contentWrapper {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 1em auto;
+}
+
+/**************************************
+ABOUT SECTION - HOME PAGE
+**************************************/
+.profile_photo {
+	border-radius: 50%;
+	max-width: 75px;
+	max-height: 85px;
+	margin: 5% auto 1% auto;
+}
+
+.section-headline {
+	margin: .25em auto;
+	font-family: 'Ailerons', cursive;
+	font-weight: 400;
+}
+
+.section-about {
+	margin: 0;
+	font-family: 'Palanquin', sans-serif;
+	font-weight: 100;
+	font-size: .9em;
+	text-align: center;
+	box-shadow: 1px 1px 10px rgba(128, 128, 128, .3);
+	border-radius: 3px;
+}
+
+/**************************************
+FOOTER 
+**************************************/
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: black;
+}
+
+#top-link {
+	font-size: .8em;
+	color: #FBFBFB;
+	margin: 1px;
+}
+
+#footer-icons {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	padding: 0;
+	margin: 4px;
+}
+
+.social-media-icon {
+	max-width: 20px;
+	max-height: 20px;
+	margin: 4px;
+}
+
+#copyright {
+	font-size: .5em;
+	color: #C9BC68;
+	margin: 3% auto 1% auto;
+}
+
+/**************************************
+MEDIA QUERIES
+**************************************/
+
+@media screen and (max-width: 245px) {
+	#headline {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 835px) {
+	#headline {
+		font-size: 1.8em;
+	}
+
+	#logoContainer {
+		margin-top: 1%;
+	}
+	
+}
+
+@media screen and (max-width: 295px) {
+	#nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		list-style: none;
+		padding: 6px auto;
+		margin: 5px auto;
+		}
+}
+
+@media screen and (min-width: 835px) {
+
+
+	#contentWrapper {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: space-between;
+		width: 100%;
+	}
+
+	.col {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 48%;
+		max-height: 80%;
+		margin: 1em auto;
+	}
+
+}
+
+
+@media screen and (min-width: 1000px) {
+	
+}

@@ -1,0 +1,178 @@
+@font-face {
+	font-family: 'Ailerons Regular';
+	scr: url('../Ailerons-Typeface.otf') format('opentype');
+}
+
+#bodyContainer {
+	background: black;
+	width: 100%;
+}
+
+#contentWrapper {
+	margin: 0 auto;
+	max-width: 90%;
+	display: flex;
+	flex-direction: column;
+}
+
+#show-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 10% auto 20% auto;
+}
+
+.date-col {
+	text-align: center;
+}
+
+.day-col {
+	text-align: center;
+	max-width: 63px;
+}
+
+.venue-col {
+	text-align: center;
+}
+
+.location-col {
+	text-align: center;
+	max-width: 75px;
+}
+
+.ticket-col {
+	display: flex;
+	justify-content: center;
+}
+
+caption {
+	font-size: 2.75em;
+	font-family: 'Ailerons', cursive;
+	letter-spacing: .025em;
+	margin: auto;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	font-size: 1.2em;
+	font-family: 'Ailerons', cursive;
+	font-weight: 400;
+	letter-spacing: .025em;
+	border-bottom: 1px solid #ddd;
+}
+
+td {
+	font-size: .7em;
+	font-family: 'Palanquin', sans-serif;
+	font-weight: 100;
+	letter-spacing: .025em;
+	align-items: center;
+	justify-content: center;
+}
+
+tr {
+	border-bottom: 1px dotted rgba(128, 128, 128, .2);
+}
+
+button {
+	max-width: 100%;
+	height: 100%;
+	padding: 2px 2px;
+	font-family: 'Ailerons', cursive;
+	font-size: 1.3em;
+	color: white;
+	border-radius: 1px; 
+	border: solid 2px white;
+	background-color: #000;
+
+}
+
+button:hover {
+	border: 3px solid #C9BC68;
+	color: #c9bc68;
+
+}
+
+#show-header-and-text-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4%;
+}
+
+h2 {
+	font-size: 2.75em;
+	font-family: 'Ailerons', cursive;
+	letter-spacing: .025em;
+	text-align: center;
+	margin: 7% auto 4%  auto;
+}
+
+div p {
+	font-size: .9em;
+	font-family: 'Palanquin', sans-serif;
+	font-weight: 100;
+	letter-spacing: .025em;
+	text-align: justify;	
+}
+
+@media screen and (max-width: 414px) {
+	.day-col {
+		display: none;
+	}
+
+	th {
+		font-size: .9em;
+	}
+
+	#dayheader {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 315px) {
+	.location-col {
+		display: none;
+	}
+
+	#locationheader {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
